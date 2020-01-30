@@ -1,2 +1,2 @@
-# germeval-hatespeech
+# hatespeech
 hate speech recognition
