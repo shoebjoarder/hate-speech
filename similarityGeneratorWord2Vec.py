@@ -9,8 +9,8 @@ import os
 #model = KeyedVectors.load_word2vec_format('embed_tweets_de_300D_fasttext', binary=False)
 
 # WORD2VEC MODEL
-# my_path = os.path.abspath(os.path.dirname(__file__))
-# path = os.path.join(my_path, "data\\pretrainedModel\\twitter_embedding.bin")
+my_path = os.path.abspath(os.path.dirname(__file__))
+path = os.path.join(my_path, "data/pretrainedModel/twitter_embedding.bin")
 model = Word2Vec.load(path)
 #print(model.most_similar('merkel'))
 
