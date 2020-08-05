@@ -2,7 +2,7 @@ import json
 import os
 from glob import glob
 
-def parseTwitter(fileName, path):
+def parseTwitterMessages(fileName, path):
     files = glob(path + "/*.json")
     # open a write file
     outputFile = open(fileName, "a+")
@@ -205,7 +205,7 @@ if __name__ == '__main__':
     #path = r'./twitter_dataset'
 
     # start parsing twitter text
-    parseTwitter(dataset, path)
+    parseTwitterMessages(dataset, path)
     print("\nDone twitter data parsing!\n")
     """
     #print("Run this in termimal to remove exact duplicates \"sort twitter_dataset.txt | uniq > cleaned_twitter.txt\" \n")
